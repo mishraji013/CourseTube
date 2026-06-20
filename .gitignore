@@ -1,1 +1,6 @@
 # Git ignore file
+__pycache__/
+*.pyc
+learning_platform.db
+certificates/
+.env
