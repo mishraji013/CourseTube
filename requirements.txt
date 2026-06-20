@@ -6,7 +6,6 @@ pydantic
 python-multipart
 firebase-admin
 jinja2
-streamlit
 requests
 aiofiles
 reportlab
