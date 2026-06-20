@@ -8,5 +8,5 @@ firebase-admin
 jinja2
 requests
 aiofiles
-reportlab
+reportlab>=4.2.0
 google-generativeai
