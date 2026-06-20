@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content=
+        "width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        CourseTube Admin
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div
+            class="logo"
+
+            onclick="
+            window.location.href=
+            'dashboard.html'
+            "
+
+            style="
+            cursor:pointer;
+            "
+        >
+            CourseTube Admin
+        </div>
+
+        <button
+            class="logout-btn"
+            onclick="logout()"
+        >
+            Logout
+        </button>
+
+    </nav>
+
+
+    <!-- ANALYTICS -->
+
+    <div
+        id="adminStats"
+
+        style="
+        width:90%;
+        margin:30px auto;
+
+        display:grid;
+
+        grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(220px,1fr)
+        );
+
+        gap:20px;
+        "
+    >
+
+        <div
+        class="admin-stat-card"
+        >
+            <h2 id="totalStudents">
+                0
+            </h2>
+
+            <p>
+                Students
+            </p>
+        </div>
+
+        <div
+        class="admin-stat-card"
+        >
+            <h2 id="totalCourses">
+                0
+            </h2>
+
+            <p>
+                Courses
+            </p>
+        </div>
+
+        <div
+        class="admin-stat-card"
+        >
+            <h2 id="totalQuizzes">
+                0
+            </h2>
+
+            <p>
+                Quiz Questions
+            </p>
+        </div>
+
+        <div
+        class="admin-stat-card"
+        >
+            <h2 id="totalCertificates">
+                0
+            </h2>
+
+            <p>
+                Certificates
+            </p>
+        </div>
+
+    </div>
+
+
+
+    <div class="admin-container">
+
+
+        <!-- ADD COURSE -->
+
+        <div class="admin-card">
+
+            <h1>
+                Add Course
+            </h1>
+
+            <input
+                type="text"
+                id="title"
+                placeholder=
+                "Course Title"
+            >
+
+            <textarea
+                id="description"
+                placeholder=
+                "Course Description"
+            ></textarea>
+
+            <input
+                type="text"
+                id="playlist"
+                placeholder=
+                "YouTube Playlist URL"
+            >
+
+            <input
+                type="text"
+                id="thumbnailUrl"
+                placeholder=
+                "Thumbnail URL"
+            >
+
+            <button
+                class="add-btn"
+                onclick=
+                "addCourse()"
+            >
+                Add Course
+            </button>
+
+        </div>
+
+
+
+        <!-- AI QUIZ -->
+
+        <div class="admin-card">
+
+            <h1>
+                Generate AI Quiz
+            </h1>
+
+            <input
+                type="number"
+                id=
+                "quizCourseId"
+
+                placeholder=
+                "Course ID"
+            >
+
+            <input
+                type="text"
+                id=
+                "quizCourseTitle"
+
+                placeholder=
+                "Course Title"
+            >
+
+            <button
+                class=
+                "generate-btn"
+
+                onclick=
+                "generateAIQuiz()"
+            >
+                Generate 20 Questions
+            </button>
+
+        </div>
+
+
+
+        <!-- MANAGE COURSES -->
+
+        <div class="admin-card">
+
+            <h1>
+                Manage Courses
+            </h1>
+
+            <div
+                id="adminCourseList"
+
+                style="
+                display:grid;
+
+                grid-template-columns:
+                repeat(
+                    auto-fit,
+                    minmax(250px,1fr)
+                );
+
+                gap:20px;
+                "
+            >
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

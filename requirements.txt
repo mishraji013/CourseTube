@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+sqlalchemy
+sqlite-utils
+pydantic
+python-multipart
+firebase-admin
+jinja2
+streamlit
+requests
+aiofiles
+reportlab
+google-generativeai

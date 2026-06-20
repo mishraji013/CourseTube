@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Dashboard
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            CourseTube
+        </div>
+
+        <div
+            style="
+            display:flex;
+            gap:15px;
+            align-items:center;
+            "
+        >
+
+            <button
+                id="adminBtn"
+                class="admin-btn"
+                style="display:none"
+                onclick="
+                window.location.href=
+                'admin.html'
+                "
+            >
+                Admin Panel
+            </button>
+
+            <button
+                class="logout-btn"
+                onclick="
+                window.location.href=
+                'profile.html'
+                "
+            >
+                Profile
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="dashboard-hero">
+
+        <h1>
+            Explore Courses
+        </h1>
+
+        <p>
+            Learn skills, complete courses,
+            unlock certificates 🚀
+        </p>
+
+    </section>
+
+
+    <!-- SEARCH BAR -->
+
+    <div
+        style="
+        width:90%;
+        max-width:700px;
+        margin:0 auto 30px auto;
+        "
+    >
+
+        <input
+            type="text"
+            id="courseSearch"
+
+            placeholder=
+            "Search courses..."
+
+            onkeyup=
+            "searchCourses()"
+
+            style="
+            width:100%;
+            padding:18px;
+            border-radius:18px;
+            "
+        >
+
+    </div>
+
+
+    <!-- COURSE GRID -->
+
+    <div
+        id="courseGrid"
+        class="course-grid"
+    >
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content=
+        "width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        CourseTube Login
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="login-page">
+
+        <!-- LEFT SIDE -->
+
+        <div class="hero-left">
+
+            <h1>
+                Learn Smarter.<br>
+                Complete Courses.<br>
+                Get Certified 🚀
+            </h1>
+
+            <p>
+                Watch YouTube playlists,
+                complete courses,
+                unlock quizzes,
+                and earn certificates.
+            </p>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+
+        <div class="login-card">
+
+            <div class="login-logo">
+                CourseTube
+            </div>
+
+            <h2>
+                Welcome Back
+            </h2>
+
+            <p>
+                Continue your learning journey
+            </p>
+
+            <!-- LOGIN -->
+
+            <button
+                class="google-btn"
+                onclick="googleLogin()"
+            >
+                Continue with Google
+            </button>
+
+
+            <!-- VERIFY CERTIFICATE -->
+
+            <div
+                style="
+                margin-top:30px;
+                width:100%;
+                "
+            >
+
+                <h3
+                    style="
+                    margin-bottom:15px;
+                    text-align:center;
+                    "
+                >
+                    Verify Certificate
+                </h3>
+
+                <input
+                    type="text"
+                    id="certificateId"
+                    placeholder=
+                    "Enter Certificate ID"
+                    style="
+                    width:100%;
+                    padding:14px;
+                    border-radius:12px;
+                    border:1px solid #ddd;
+                    margin-bottom:12px;
+                    box-sizing:border-box;
+                    "
+                >
+
+                <button
+                    class="google-btn"
+                    onclick=
+                    "verifyCertificate()"
+                >
+                    Verify Certificate
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script
+        type="module"
+        src="firebase.js"
+    ></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

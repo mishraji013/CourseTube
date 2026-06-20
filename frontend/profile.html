@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content=
+        "width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        My Profile
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            CourseTube
+        </div>
+
+        <button
+            class="dashboard-btn"
+            onclick="
+            window.location.href=
+            'dashboard.html'
+            "
+        >
+            Dashboard
+        </button>
+
+    </nav>
+
+
+    <!-- PROFILE -->
+
+    <div class="profile-page">
+
+        <!-- PROFILE CARD -->
+
+        <div class="profile-main-card">
+
+            <div class="profile-avatar">
+
+                👤
+
+            </div>
+
+            <h1
+                id="profileName"
+            >
+                Loading...
+            </h1>
+
+            <p
+                id="profileEmail"
+            >
+            </p>
+
+            <div
+                class="profile-info-grid"
+            >
+
+                <div class="info-box">
+
+                    <span>
+                        College
+                    </span>
+
+                    <h3
+                        id="profileCollege"
+                    >
+                    </h3>
+
+                </div>
+
+                <div class="info-box">
+
+                    <span>
+                        Course
+                    </span>
+
+                    <h3
+                        id="profileCourse"
+                    >
+                    </h3>
+
+                </div>
+
+                <div class="info-box">
+
+                    <span>
+                        City
+                    </span>
+
+                    <h3
+                        id="profileCity"
+                    >
+                    </h3>
+
+                </div>
+
+                <div class="info-box">
+
+                    <span>
+                        Phone
+                    </span>
+
+                    <h3
+                        id="profilePhone"
+                    >
+                    </h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CERTIFICATES -->
+
+        <div class="certificate-section">
+
+            <h2>
+                🎓 My Certificates
+            </h2>
+
+            <div
+                id="certificateContainer"
+            >
+            </div>
+
+        </div>
+
+
+        <!-- LOGOUT -->
+
+        <button
+            class="logout-profile-btn"
+            onclick="logout()"
+        >
+            Logout
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content=
+        "width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Complete Profile
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="profile-setup-page">
+
+        <div class="profile-card">
+
+            <h1>
+                Complete Your Profile
+            </h1>
+
+            <p>
+                Fill your details to continue learning
+            </p>
+
+           <div class="profile-upload">
+
+    <img
+        id="previewImage"
+        src=
+        "https://cdn-icons-png.flaticon.com/512/847/847969.png"
+    >
+
+    <input
+        type="file"
+        id="profilePhoto"
+        accept="image/*"
+        onchange="previewProfilePhoto(event)"
+    >
+
+</div>
+            <div class="form-grid">
+
+                <input
+                    id="fullName"
+                    type="text"
+                    placeholder="Full Name"
+                >
+
+                <input
+                    id="phone"
+                    type="text"
+                    placeholder="Phone Number"
+                >
+
+                <select
+                    id="gender"
+                >
+                    <option value="">
+                        Select Gender
+                    </option>
+
+                    <option>
+                        Male
+                    </option>
+
+                    <option>
+                        Female
+                    </option>
+
+                    <option>
+                        Other
+                    </option>
+                </select>
+
+                <input
+                    id="dob"
+                    type="date"
+                >
+
+                <input
+                    id="college"
+                    type="text"
+                    placeholder="College / School"
+                >
+
+                <input
+                    id="course"
+                    type="text"
+                    placeholder="Course / Degree"
+                >
+
+                <input
+                    id="city"
+                    type="text"
+                    placeholder="City"
+                >
+
+            </div>
+
+            <button
+                class="save-profile-btn"
+                onclick="saveProfile()"
+            >
+                Save & Continue
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Final Quiz
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            CourseTube
+        </div>
+
+        <button
+            class="logout-btn"
+            onclick="logout()"
+        >
+            Logout
+        </button>
+
+    </nav>
+
+
+    <!-- QUIZ CONTAINER -->
+
+    <div class="quiz-container">
+
+        <div class="quiz-header">
+
+            <h1>
+                🎯 Final Quiz
+            </h1>
+
+            <p>
+                Score
+                <strong>70%</strong>
+                to unlock your certificate
+            </p>
+
+        </div>
+
+
+        <!-- PROGRESS -->
+
+        <div class="quiz-progress-box">
+
+            <div class="quiz-progress-top">
+
+                <span>
+                    Progress
+                </span>
+
+                <span
+                    id="quizProgressText"
+                >
+                    0%
+                </span>
+
+            </div>
+
+            <div class="quiz-progress-bar">
+
+                <div
+                    id="quizProgressFill"
+                    class="quiz-progress-fill"
+                ></div>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTIONS -->
+
+        <div
+            id="quizContainer"
+        >
+        </div>
+
+
+        <!-- SUBMIT BUTTON -->
+
+        <button
+            class="submit-quiz-btn"
+            onclick="submitQuiz()"
+        >
+            Submit Quiz
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
